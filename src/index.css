@@ -6,13 +6,13 @@
 }
 
 .text_gradient {
-    background: var(--brand-gradient);
-    background-clip: text;
-    color : transparent;
+  background: var(--brand-gradient);
+  background-clip: text;
+  color: transparent;
 }
+
 .primary_gradient {
-    background: var(--brand-gradient);
-    
+  background: var(--brand-gradient);
 }
 
 html,

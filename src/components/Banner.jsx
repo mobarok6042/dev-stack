@@ -2,11 +2,11 @@ import bannerImage from "../assets/banner-stack.png";
 
 const Banner = () => {
   return (
-    <div className="w-full lg:container mx-auto">
+    <section id="home" className="w-full lg:container mx-auto">
       <div className="hero bg-gray-50 min-h-screen lg:min-h-[650px]">
         <div className="hero-content flex-col  lg:flex-row-reverse">
           <img
-            alt="Failed to fetch image"
+            alt="A collection of development tools"
             src={bannerImage}
             className="max-w-sm rounded-lg"
           />
@@ -20,16 +20,16 @@ const Banner = () => {
               right tools, frameworks, and technologies to build amazing
               applications.
             </p>
-            <button className="btn primary_gradient mr-4 rounded-xl">
+            <button type="button" className="btn primary_gradient mr-4 rounded-xl">
               Explore Technologies
             </button>
-            <button className="btn border border-gray-400 text-gray-500 rounded-xl">
+            <button type="button" className="btn border border-gray-400 text-gray-500 rounded-xl">
               Learn More
             </button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
