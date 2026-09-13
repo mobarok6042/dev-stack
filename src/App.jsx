@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import Stacks from "./components/Stacks";
+import Footer from "./components/Footer";
 import "./App.css";
 import { Suspense } from "react";
 import { ToastContainer } from "react-toastify";
@@ -24,9 +25,16 @@ function App() {
       <ToastContainer position="top-right" autoClose={3000} />
       <Navbar />
       <Banner />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center min-h-40">
+            <span className="loading loading-spinner loading-lg"></span>
+          </div>
+        }
+      >
         <Stacks stackPromise={stacksPromise} />
       </Suspense>
+      <Footer></Footer>
     </>
   );
 }

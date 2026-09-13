@@ -1,4 +1,5 @@
 import { toast } from "react-toastify";
+import { CiStar } from "react-icons/ci";
 
 const AvailableStacks = ({ stacks, selectedStacks, setSelectedStacks }) => {
   const handleAddStack = (stack) => {
@@ -47,7 +48,10 @@ const AvailableStacks = ({ stacks, selectedStacks, setSelectedStacks }) => {
                   <div className="flex flex-wrap gap-2 mt-2">
                     <div className="badge badge-ghost">{stack.category}</div>
                     <span className="badge">{stack.difficulty}</span>
-                    <span className="badge">{stack.rating}</span>
+                    <span className="badge">
+                      <CiStar />
+                      {stack.rating}
+                    </span>
                   </div>
                   <button
                     onClick={() => handleAddStack(stack)}

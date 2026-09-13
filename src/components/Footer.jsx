@@ -1,41 +1,54 @@
-
+import img from "../assets/logo-text.png";
 
 const Footer = () => {
   return (
-    <div>
-      <div>
-        <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
-          <aside>
-            <img src="../assets/logo-text.png" alt="" />
+    <>
+      <footer className="bg-base-200 text-base-content">
+        <div className="mx-auto flex max-w-[120rem] flex-col items-center justify-center gap-5 p-8 text-center sm:p-10 md:flex-row md:flex-wrap md:items-start md:gap-x-40 md:gap-y-10">
+          <aside className="flex flex-col items-center">
+            <img src={img} alt="Dev Stack" />
             <p>
-              ACME Industries Ltd.
+              Open your career dream doors
               <br />
-              Providing reliable tech since 1992
+              with the right stack combination.
             </p>
+            <div className="mt-4 flex gap-4">
+              <a href="#github" className="link-hover text-xs font-bold">GitHub</a>
+              <a href="#twitter" className="link-hover text-xs font-bold">Twitter</a>
+              <a href="#linkedin" className="link-hover text-xs font-bold">LinkedIn</a>
+            </div>
           </aside>
-          <nav>
-            <h6 className="footer-title">Services</h6>
-            <a className="link link-hover">Branding</a>
-            <a className="link link-hover">Design</a>
-            <a className="link link-hover">Marketing</a>
-            <a className="link link-hover">Advertisement</a>
+          <nav className="flex flex-col items-center gap-1">
+            <h6 className="footer-title">Product</h6>
+            <a href="#home" className="link link-hover">Home</a>
+            <a href="#technologies" className="link link-hover">Technology</a>
+            <a href="#projects" className="link link-hover">Projects</a>
           </nav>
-          <nav>
+          <nav className="flex flex-col items-center gap-1">
             <h6 className="footer-title">Company</h6>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Jobs</a>
-            <a className="link link-hover">Press kit</a>
+            <a href="#about" className="link link-hover">About us</a>
+            <a href="#contact" className="link link-hover">Contact</a>
+            <a href="#careers" className="link link-hover">Careers</a>
           </nav>
-          <nav>
+          <nav className="flex flex-col items-center gap-1">
             <h6 className="footer-title">Legal</h6>
-            <a className="link link-hover">Terms of use</a>
-            <a className="link link-hover">Privacy policy</a>
-            <a className="link link-hover">Cookie policy</a>
+            <a href="#privacy" className="link link-hover">Privacy Policy</a>
+            <a href="#terms" className="link link-hover">Terms of Service</a>
           </nav>
-        </footer>
-      </div>
-    </div>
+        </div>
+      </footer>
+      <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+        <aside className="flex flex-row items-center justify-between gap-80">
+          <p>
+            Copyright © {new Date().getFullYear()} - All right reserved by Dev Stack.
+          </p>
+          <div className="flex flex-row gap-4"                                                                           >
+            <p>Privacy</p>
+          <p>Terms</p>
+          </div>
+        </aside>
+      </footer>
+    </>
   );
 };
 
