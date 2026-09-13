@@ -1,2 +1,25 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+:root {
+  --brand-gradient: linear-gradient(90deg, #f97316, #ec4899, #8b5cf6);
+}
+
+.text_gradient {
+    background: var(--brand-gradient);
+    background-clip: text;
+    color : transparent;
+}
+.primary_gradient {
+    background: var(--brand-gradient);
+    
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}

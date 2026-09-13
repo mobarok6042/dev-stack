@@ -3,8 +3,9 @@ import hamburger from "../assets/hamburger.png";
 
 const Navbar = () => {
   return (
-    <div className="lg:container mx-auto">
-      <div className="navbar bg-base-100 shadow-sm">
+    <div className="sticky top-0 z-50 bg-base-100 shadow-sm ">
+      <div className="w-full lg:container mx-auto">
+      <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -59,6 +60,7 @@ const Navbar = () => {
           <button className="btn btn-secondary w-12 md:w-36">Sign up</button>
         </div>
       </div>
+    </div>
     </div>
   );
 };
