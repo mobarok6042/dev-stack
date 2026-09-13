@@ -1,29 +1,73 @@
-# React + Vite
+# 🚀 Stack Learning Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
+A modern and beginner-friendly web application designed to help users explore and learn about different technologies, programming languages, frameworks, tools, and development stacks. Users can browse technology information, check ratings and difficulty levels, and select their preferred technologies to build their learning stack.
 
 
-## React Compiler
+ Technologies Used
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+ **React.js**
+ **JavaScript (ES6)**
+ **Tailwind CSS**
+ **DaisyUI**
+ **React Icons**
+ **JSON**
+ **Vite**
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+ Key Features
 
-## Expanding the ESLint configuration
+1. Technology Stack Explorer
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Dev Stack
+Explore different technologies from categories such as Frontend, Backend, Database, Programming Language, Styling, DevOps, and Tools.
 
-Dev Stack is a React app for exploring development technologies and building a personal stack from them.
+2. Technology Selection
 
-## Getting Started
+Users can select technologies they want to learn and easily remove them from their selected learning stack.
 
-```bash
-npm install
-npm run dev
-```
+3. Dynamic Data & Responsive UI
 
-Use `npm run lint` to check the code and `npm run build` to create a production build.
+Technology information is loaded dynamically from JSON data, and the application provides a responsive interface that works across different screen sizes.
+
+---
+
+
+
+ 1. What is JSX, and why is it used in React?
+
+JSX is a syntax that allows us to write HTML-like code inside JavaScript. React uses JSX because it makes the UI structure easier to write, read, and understand.
+
+ 2. What is the difference between props and state?
+
+Props are used to pass data from a parent component to a child component. They are read-only.
+
+State is data managed inside a component. When state changes, React updates the UI.
+
+ 3. What does the useState hook do, and where did you use it in this project?
+
+The useState hook is used to create and manage changing data inside a React component.
+
+In this project, I used useState to manage the selected technology stacks and update them when a user selects or removes a technology.
+
+ 4. What does the useEffect hook do, and why did you need it to load the JSON data?
+
+The useEffect hook is used to perform side effects in a React component.
+
+I used it to load the JSON data when the component starts, so the technology information can be displayed dynamically in the application.
+
+ 5. Why does every item in a .map() list need a unique key prop?
+
+React needs a unique key to identify each item in a list. It helps React understand which items have changed, been added, or removed and update the UI efficiently.
+
+ 6. What is conditional rendering? Show one place you used it.
+
+Conditional rendering means showing different UI based on a condition.
+
+For example, I used conditional rendering to show an empty stack message when the user has not selected any technology.
+
+
+
+ 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+
+A parent component can pass data to a child using **props**.
+
+If the child needs to send something back to the parent, the parent can pass a **function as a prop**. The child can then call that function with the required data.
+
