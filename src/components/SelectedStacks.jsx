@@ -22,7 +22,7 @@ const SelectedStacks = ({ selectedStacks, setSelectedStacks }) => {
   };
 
   return (
-    <div className="mt-8 w-full max-w-6xl px-4 sm:px-6 lg:mt-20 lg:w-1/2 lg:px-0">
+    <div className="mt-8 w-full max-w-md px-4 sm:px-6 lg:mt-20 lg:w-1/3 lg:px-0">
       <div className="text-center lg:text-left">
         <p className="text-4xl font-bold sm:text-5xl">Your stacks</p>
         <p className="text-lg text-gray-600">
