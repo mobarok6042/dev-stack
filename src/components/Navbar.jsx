@@ -39,10 +39,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end gap-2.5">
-            <button type="button" className="btn btn-soft text-gray-900 w-12 md:w-36">
+            <button type="button" className="btn btn-soft text-gray-900 w-12 md:w-36 rounded-3xl">
               Sign in
             </button>
-            <button type="button" className="btn btn-secondary w-12 md:w-36">
+            <button type="button" className="btn btn-secondary w-12 md:w-36 rounded-3xl">
               Sign up
             </button>
           </div>
