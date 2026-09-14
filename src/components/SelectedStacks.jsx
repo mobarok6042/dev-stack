@@ -56,7 +56,7 @@ const SelectedStacks = ({ selectedStacks, setSelectedStacks }) => {
           </div>
         ))}
       </div>
-      <button type="button" onClick={handleRemoveAll} className="btn btn-outline btn-error mt-4">
+      <button type="button" onClick={handleRemoveAll} className="btn btn-outline btn-error mt-4 rounded-3xl">
         Remove All
       </button>
     </div>

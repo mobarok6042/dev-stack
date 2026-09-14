@@ -42,7 +42,7 @@ const Navbar = () => {
             <button type="button" className="btn btn-soft text-gray-900 w-12 md:w-36 rounded-3xl">
               Sign in
             </button>
-            <button type="button" className="btn btn-secondary w-12 md:w-36 rounded-3xl">
+            <button type="button" className="btn btn-secondary w-12 md:w-36 rounded-3xl primary_gradient">
               Sign up
             </button>
           </div>
