@@ -38,11 +38,11 @@ const Footer = () => {
         </div>
       </footer>
       <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
-        <aside className="flex flex-row items-center justify-between gap-80">
+        <aside className="flex w-full flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
           <p>
             Copyright © {new Date().getFullYear()} - All right reserved by Dev Stack.
           </p>
-          <div className="flex flex-row gap-4"                                                                           >
+          <div className="flex flex-row gap-4">
             <p>Privacy</p>
           <p>Terms</p>
           </div>

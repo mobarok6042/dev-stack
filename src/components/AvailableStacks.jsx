@@ -17,14 +17,14 @@ const AvailableStacks = ({ stacks, selectedStacks, setSelectedStacks }) => {
   };
 
   return (
-    <div className="lg:w-1/2 mx-20 mt-20">
-      <p className="text-5xl">
+    <div className="mt-20 w-full max-w-6xl px-4 sm:px-6 lg:w-1/2 lg:px-0">
+      <p className="text-center text-4xl sm:text-5xl lg:text-left">
         Explore the <span className="text_gradient">Technologies</span>{" "}
       </p>
-      <p className="text-lg text-gray-600 mb-8">
+      <p className="mb-8 text-center text-lg text-gray-600 lg:text-left">
         Pick one per category to build your ideal stack.
       </p>
-      <div className="p-4 grid grid-cols-1 md:grid-cols-[repeat(2,320px)] lg:grid-cols-[repeat(3,320px)] gap-x-2 gap-y-4 justify-start ">
+      <div className="grid grid-cols-1 justify-items-center gap-x-2 gap-y-4 p-4 md:grid-cols-[repeat(2,320px)] md:justify-center lg:grid-cols-[repeat(3,320px)] lg:justify-start">
         {stacks.map((stack) => {
           const isAdded = selectedStacks.some(
             (selectedStack) => selectedStack.id === stack.id,

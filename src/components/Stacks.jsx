@@ -8,7 +8,7 @@ const Stacks = ({ stackPromise }) => {
   const [selectedStacks, setSelectedStacks] = useState([]);
 
   return (
-    <div className="flex gap-5 md:gap-11 lg:flex-row lg:gap-20 justify-center items-start flex-col">
+    <div className="flex w-full flex-col items-center justify-start gap-5 px-4 md:gap-11 lg:flex-row lg:items-start lg:justify-center lg:gap-20">
       <AvailableStacks
         stacks={stacks}
         selectedStacks={selectedStacks}
